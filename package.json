@@ -1,12 +1,16 @@
 {
-  "name": "tinder-backend-3",
+  "name": "tinder-backend",
   "version": "1.0.0",
   "description": "Tinder Backend",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Ankush",
   "license": "ISC",
